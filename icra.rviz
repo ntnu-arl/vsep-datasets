@@ -1,0 +1,396 @@
+Panels:
+  - Class: rviz/Displays
+    Help Height: 0
+    Name: Displays
+    Property Tree Widget:
+      Expanded:
+        - /workspace1/Namespaces1
+        - /nbvp_stats1/Namespaces1
+        - /vsep_tree1/Namespaces1
+        - /vsep_best1/Namespaces1
+        - /vsep_stats1/Namespaces1
+      Splitter Ratio: 0.46633
+    Tree Height: 379
+  - Class: rviz/Selection
+    Name: Selection
+  - Class: rviz/Tool Properties
+    Expanded:
+      - /2D Pose Estimate1
+      - /2D Nav Goal1
+      - /Publish Point1
+    Name: Tool Properties
+    Splitter Ratio: 0.588679
+  - Class: rviz/Views
+    Expanded:
+      - /Current View1
+    Name: Views
+    Splitter Ratio: 0.5
+  - Class: rviz/Time
+    Experimental: false
+    Name: Time
+    SyncMode: 0
+    SyncSource: cam0_saliency
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Alpha: 0.5
+      Cell Size: 1
+      Class: rviz/Grid
+      Color: 160; 160; 164
+      Enabled: true
+      Line Style:
+        Line Width: 0.03
+        Value: Lines
+      Name: Grid
+      Normal Cell Count: 0
+      Offset:
+        X: 10
+        Y: 0
+        Z: 0
+      Plane: XY
+      Plane Cell Count: 20
+      Reference Frame: <Fixed Frame>
+      Value: true
+    - Class: rviz/Axes
+      Enabled: false
+      Length: 0.35
+      Name: Fixed Frame
+      Radius: 0.0125
+      Reference Frame: <Fixed Frame>
+      Value: false
+    - Class: rviz/MarkerArray
+      Enabled: false
+      Marker Topic: /nbvplanner/octomap_free
+      Name: map_free
+      Namespaces:
+        {}
+      Queue Size: 100
+      Value: false
+    - Class: rviz/MarkerArray
+      Enabled: true
+      Marker Topic: /nbvplanner/octomap_occupied
+      Name: map_occupied
+      Namespaces:
+        map: true
+      Queue Size: 100
+      Value: true
+    - Class: rviz/Image
+      Enabled: false
+      Image Topic: /cam0/image_rect
+      Max Value: 1
+      Median window: 5
+      Min Value: 0
+      Name: cam0
+      Normalize Range: true
+      Queue Size: 2
+      Transport Hint: raw
+      Unreliable: false
+      Value: false
+    - Class: rviz/Image
+      Enabled: false
+      Image Topic: /cam1/image_raw
+      Max Value: 1
+      Median window: 5
+      Min Value: 0
+      Name: cam1
+      Normalize Range: true
+      Queue Size: 2
+      Transport Hint: raw
+      Unreliable: false
+      Value: false
+    - Class: rviz/Image
+      Enabled: true
+      Image Topic: /cam0/image_rect
+      Max Value: 1
+      Median window: 5
+      Min Value: 0
+      Name: cam0_saliency
+      Normalize Range: true
+      Queue Size: 2
+      Transport Hint: raw
+      Unreliable: false
+      Value: true
+    - Class: rviz/Image
+      Enabled: true
+      Image Topic: /saliency/image
+      Max Value: 1
+      Median window: 5
+      Min Value: 0
+      Name: saliency_img
+      Normalize Range: true
+      Queue Size: 2
+      Transport Hint: raw
+      Unreliable: false
+      Value: true
+    - Class: rviz/Image
+      Enabled: false
+      Image Topic: /saliency/image_norm
+      Max Value: 1
+      Median window: 5
+      Min Value: 0
+      Name: saliency_img_norm
+      Normalize Range: true
+      Queue Size: 2
+      Transport Hint: raw
+      Unreliable: false
+      Value: false
+    - Alpha: 1
+      Autocompute Intensity Bounds: true
+      Autocompute Value Bounds:
+        Max Value: 10
+        Min Value: -10
+        Value: true
+      Axis: Z
+      Channel Name: rgb
+      Class: rviz/PointCloud2
+      Color: 255; 255; 255
+      Color Transformer: RGB8
+      Decay Time: 100
+      Enabled: false
+      Invert Rainbow: false
+      Max Color: 255; 255; 255
+      Max Intensity: 999999
+      Min Color: 0; 0; 0
+      Min Intensity: 197377
+      Name: stereo_vision
+      Position Transformer: XYZ
+      Queue Size: 1
+      Selectable: true
+      Size (Pixels): 2
+      Size (m): 0.0075
+      Style: Flat Squares
+      Topic: /stereo_vision
+      Unreliable: false
+      Use Fixed Frame: true
+      Use rainbow: false
+      Value: false
+    - Alpha: 1
+      Class: rviz_plugin_tutorials/Imu
+      Color: 204; 51; 204
+      Enabled: false
+      History Length: 1
+      Name: imu0
+      Topic: /imu0
+      Unreliable: false
+      Value: false
+    - Class: rviz/Axes
+      Enabled: false
+      Length: 0.25
+      Name: body
+      Radius: 0.025
+      Reference Frame: body
+      Value: false
+    - Class: rviz/Axes
+      Enabled: false
+      Length: 0.175
+      Name: stereo_link
+      Radius: 0.0175
+      Reference Frame: stereo_link
+      Value: false
+    - Class: rviz/Axes
+      Enabled: false
+      Length: 0.25
+      Name: rovio_imu
+      Radius: 0.01
+      Reference Frame: imu
+      Value: false
+    - Class: rviz/Axes
+      Enabled: true
+      Length: 0.25
+      Name: rovio_camera0
+      Radius: 0.01
+      Reference Frame: camera0
+      Value: true
+    - Class: rviz/Axes
+      Enabled: true
+      Length: 0.25
+      Name: rovio_camera1
+      Radius: 0.01
+      Reference Frame: camera1
+      Value: true
+    - Angle Tolerance: 0
+      Class: rviz/Odometry
+      Color: 255; 255; 0
+      Enabled: true
+      Keep: 1
+      Length: 0.325
+      Name: rovio_body
+      Position Tolerance: 0
+      Topic: /rovio/odometry_body
+      Value: true
+    - Angle Tolerance: 0
+      Class: rviz/Odometry
+      Color: 0; 255; 0
+      Enabled: true
+      Keep: 1
+      Length: 0.325
+      Name: msf_odometry
+      Position Tolerance: 0
+      Topic: /msf_core/odometry
+      Value: true
+    - Class: rviz/Marker
+      Enabled: true
+      Marker Topic: /rovio/frustum
+      Name: rovio_frustum
+      Namespaces:
+        frustum: true
+      Queue Size: 100
+      Value: true
+    - Class: rviz/Marker
+      Enabled: false
+      Marker Topic: /rovio/markers
+      Name: rovio_uncertainty
+      Namespaces:
+        {}
+      Queue Size: 100
+      Value: false
+    - Class: rviz/MarkerArray
+      Enabled: true
+      Marker Topic: /rovio/bearing_arrows
+      Name: rovio_bearing
+      Namespaces:
+        bearing_arrow: true
+      Queue Size: 100
+      Value: true
+    - Class: rviz/Marker
+      Enabled: true
+      Marker Topic: /planningWorkspace
+      Name: workspace
+      Namespaces:
+        exp_workspace: true
+      Queue Size: 100
+      Value: true
+    - Class: rviz/MarkerArray
+      Enabled: false
+      Marker Topic: /planningPath
+      Name: nbvp
+      Namespaces:
+        {}
+      Queue Size: 100
+      Value: false
+    - Class: rviz/MarkerArray
+      Enabled: true
+      Marker Topic: /bestPlanningPath
+      Name: nbvp_best
+      Namespaces:
+        vp_orientations_best: true
+        vp_positions_best: true
+      Queue Size: 100
+      Value: true
+    - Class: rviz/MarkerArray
+      Enabled: false
+      Marker Topic: /planningPathStats
+      Name: nbvp_stats
+      Namespaces:
+        {}
+      Queue Size: 100
+      Value: false
+    - Class: rviz/MarkerArray
+      Enabled: false
+      Marker Topic: /rePlanningPath
+      Name: vsep_tree
+      Namespaces:
+        {}
+      Queue Size: 100
+      Value: false
+    - Class: rviz/MarkerArray
+      Enabled: true
+      Marker Topic: /bestRePlanningPath
+      Name: vsep_best
+      Namespaces:
+        vp_orientations_best: true
+        vp_positions_best: true
+      Queue Size: 100
+      Value: true
+    - Class: rviz/MarkerArray
+      Enabled: false
+      Marker Topic: /rePlanningPathStats
+      Name: vsep_stats
+      Namespaces:
+        {}
+      Queue Size: 100
+      Value: false
+    - Class: rviz/Axes
+      Enabled: false
+      Length: 0.25
+      Name: reference
+      Radius: 0.0175
+      Reference Frame: current_reference
+      Value: false
+    - Class: rviz/MarkerArray
+      Enabled: false
+      Marker Topic: /planner_path_vis
+      Name: planner_path_vis
+      Namespaces:
+        {}
+      Queue Size: 100
+      Value: false
+  Enabled: true
+  Global Options:
+    Background Color: 255; 255; 255
+    Fixed Frame: world
+    Frame Rate: 30
+  Name: root
+  Tools:
+    - Class: rviz/Interact
+      Hide Inactive Objects: true
+    - Class: rviz/MoveCamera
+    - Class: rviz/Select
+    - Class: rviz/FocusCamera
+    - Class: rviz/Measure
+    - Class: rviz/SetInitialPose
+      Topic: /initialpose
+    - Class: rviz/SetGoal
+      Topic: /move_base_simple/goal
+    - Class: rviz/PublishPoint
+      Single click: true
+      Topic: /clicked_point
+  Value: true
+  Views:
+    Current:
+      Class: rtabmap_ros/OrbitOriented
+      Distance: 23.0369
+      Enable Stereo Rendering:
+        Stereo Eye Separation: 0.06
+        Stereo Focal Distance: 1
+        Swap Stereo Eyes: false
+        Value: false
+      Focal Point:
+        X: 9.66065
+        Y: -1.4234
+        Z: -1.56475
+      Name: Current View
+      Near Clip Distance: 0.01
+      Pitch: 1.1848
+      Target Frame: ""
+      Value: OrbitOriented (rtabmap_ros)
+      Yaw: 3.0867
+    Saved: ~
+Window Geometry:
+  Displays:
+    collapsed: false
+  Height: 1056
+  Hide Left Dock: false
+  Hide Right Dock: true
+  QMainWindow State: 000000ff00000000fd0000000400000000000001b9000003dafc0200000023fb000000100044006900730070006c0061007900730100000028000001bc000000dd00fffffffb0000001a00630061006d0030005f00730061006c00690065006e0063007901000001ea000000fd0000001600fffffffb0000001200530065006c0065006300740069006f006e00000002b50000009b0000006400fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007302000001ed000001df00000185000000a3fb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261fb00000008006d00610073006b00000001da000000960000000000000000fb0000000c0064006500620075006700310000000231000000ce0000000000000000fb0000000c00640065006200750067003200000002cb000000f30000000000000000fb0000000800630061006d00300000000135000000960000001600fffffffb0000000800630061006d0031000000018f000000940000001600fffffffb0000001c006200730070005f00630061006d0030005f0069006d00610067006500000002f3000000af0000000000000000fb00000014007000690063006f005f006d006f006e006f003800000003240000009a0000000000000000fb00000014007000690063006f005f0064006500700074006800000002ca000000f40000000000000000fb00000016007000690063006f005f006d006f006e006f0031003600000002f5000000c90000000000000000fb00000014007000690063006f005f006e006f006900730065000000033a000000c80000000000000000fb0000001200640069007300700061007200690074007900000002f5000000c90000000000000000fb0000000a0049006d006100670065010000022c000000da0000000000000000fb0000000a0049006d00610067006501000002d0000000ee0000000000000000fb0000000a0049006d00610067006501000002550000009a0000000000000000fb0000000a0049006d0061006700650100000233000000bc0000000000000000fb0000000a0049006d00610067006501000002f5000000c90000000000000000fb00000014007000690063006f005f006d006f006e006f00380000000129000000210000000000000000fb00000016007000690063006f005f006d006f006e006f0031003600000001330000014f0000000000000000fb00000014007000690063006f005f006e006f00690073006500000001bb000001930000000000000000fb0000000800630061006d003000000002db000000400000000000000000fb00000014007000690063006f005f006400650070007400680000000310000000450000000000000000fb00000012006400690073007000610072006900740079000000034d0000004d0000000000000000fb0000000800630061006d003100000003970000006b0000000000000000fb00000012006200730070005f0069006d0061006700650000000335000000cd0000000000000000fb0000001800730061006c00690065006e00630079005f0069006d006701000002ed000001150000001600fffffffb0000002200730061006c00690065006e00630079005f0069006d0067005f006e006f0072006d0000000232000001170000001600ffffff000000010000010f000003dafc0200000003fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000041000000780000000000000000fb0000000a005600690065007700730000000028000003da000000b000fffffffb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000490000000a9fc0100000001fb0000000a00560069006500770073030000004e00000080000002e100000197000000030000073f0000003bfc0100000002fb0000000800540069006d006500000000000000073f000002f600fffffffb0000000800540069006d0065010000000000000450000000000000000000000586000003da00000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  Selection:
+    collapsed: false
+  Time:
+    collapsed: false
+  Tool Properties:
+    collapsed: false
+  Views:
+    collapsed: true
+  Width: 1861
+  X: 59
+  Y: 24
+  cam0:
+    collapsed: false
+  cam0_saliency:
+    collapsed: false
+  cam1:
+    collapsed: false
+  saliency_img:
+    collapsed: false
+  saliency_img_norm:
+    collapsed: false
